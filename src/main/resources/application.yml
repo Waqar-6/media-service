@@ -1,0 +1,25 @@
+#spring.application.name=mediaservice
+
+spring:
+  application:
+    name: mediaservice
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/mediaservicedb
+    username: root
+    password: water786
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+        show_sql: true
+        use_jdbc_metadata_defaults: false
+    open-in-view: false
+
+server:
+  port: 8082
